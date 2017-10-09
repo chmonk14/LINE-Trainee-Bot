@@ -16,8 +16,7 @@ function reply ($replyMessage){
     array_push($data['messages'], $messages2);
 }
 
-$access_token = 'kvIdmPNZn1m49hXfSfyrUEII6eQy3EzBPLO+opt2dFznJ42S2MOkoWh9zt9mR/jf1bnPsA4W4GmTQzQbt2bzC5jmC2fR0099pfxWTby/iS4GqlcjjemcL3YfJeUZVjmZ7YK1x8dzOQRUfB91C/XEOAdB04t89/1O/w1cDnyilFU=
-';
+$access_token = '0njYhyMYv+lXVSXcyIq4uE2/2SFfVI5BFEKs+Kn4L7CCjn9VMbgZcDqllPSHiXox1bnPsA4W4GmTQzQbt2bzC5jmC2fR0099pfxWTby/iS7NTHdqwy35ku5/hFLiXWzYgoR3uLRTkatY4Ew1flWgvAdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
