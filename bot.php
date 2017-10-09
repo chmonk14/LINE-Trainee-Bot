@@ -16,7 +16,8 @@ function reply ($replyMessage){
     array_push($data['messages'], $messages2);
 }
 
-$access_token = 'ts/ODdUyyx8b4V22zeXlZJFcwI5ujx+QH4lL+WOUH1zE/FFQWjsX/hz9ct7Z421y5qRuUYCUxM17fgFHO0coy/EKPuUPLJyqTaVtE0Xd/uR6YRlLFbvGBhNS9NE3Q2LkcKZTPstqbwkuL7hTjF5GGAdB04t89/1O/w1cDnyilFU=';
+$access_token = 'kvIdmPNZn1m49hXfSfyrUEII6eQy3EzBPLO+opt2dFznJ42S2MOkoWh9zt9mR/jf1bnPsA4W4GmTQzQbt2bzC5jmC2fR0099pfxWTby/iS4GqlcjjemcL3YfJeUZVjmZ7YK1x8dzOQRUfB91C/XEOAdB04t89/1O/w1cDnyilFU=
+';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -42,7 +43,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             $messages = [
                 'type' => 'text',
-                'text' => 'from editing branch. Ver. 0.0.17 (test): '.$text
+                'text' => 'from Trainee Bot. Ver. 0.0.1 : '.$text
             ];
 
             // Make a POST Request to Messaging API to reply to sender

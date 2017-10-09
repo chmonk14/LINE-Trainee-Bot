@@ -1,1 +1,1 @@
-# LINE-BOT-PHP-Starter
+# LINE-TRAINEE-BOT-PHP-Starter
