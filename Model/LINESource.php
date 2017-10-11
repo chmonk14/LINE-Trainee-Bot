@@ -55,7 +55,7 @@ class LINEUser{
         $varExport = var_export($result,true);
         echo 'var_export'.$varExport['pictureUrl'].'\n';
 
-        $JSONUser = json_decode($result);
+        $JSONUser = var_dump(json_decode($result));
         echo 'decode'.$JSONUser['pictureUrl'].'\n';
 
         print_r($JSONUser);

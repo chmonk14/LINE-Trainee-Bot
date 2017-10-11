@@ -39,8 +39,8 @@
       <file leaf-file-name="LINESource.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Model/LINESource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+            <state relative-caret-position="503">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -213,12 +213,12 @@
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
       <workItem from="1507712005128" duration="4089000" />
-      <workItem from="1507737734824" duration="2917000" />
+      <workItem from="1507737734824" duration="3204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8987000" />
+    <option name="totallyTimeSpent" value="9274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -429,8 +429,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/LINESource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="52" column="49" lean-forward="false" selection-start-line="52" selection-start-column="49" selection-end-line="52" selection-end-column="49" />
+        <state relative-caret-position="503">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>
