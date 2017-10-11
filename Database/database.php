@@ -122,4 +122,4 @@ function retrievePendingUser(){
     echo json_encode($response);
 }
 
-addPendingUser();
+addPendingUser('U598fd340290868fa5b013ba502212c79');
