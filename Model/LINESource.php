@@ -50,12 +50,13 @@ class LINEUser{
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 
         $result = curl_exec($ch);
+        echo 'result'.$result['pictureUrl'].'\n';
 
         $varExport = var_export($result,true);
-        echo 'var_export'.$varExport['pictureUrl'];
+        echo 'var_export'.$varExport['pictureUrl'].'\n';
 
         $JSONUser = json_decode($result);
-        echo 'decode'.$JSONUser['pictureUrl'];
+        echo 'decode'.$JSONUser['pictureUrl'].'\n';
 
         print_r($JSONUser);
 
