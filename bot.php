@@ -58,9 +58,8 @@ if (!is_null($events['events'])) {
 
 
             $userID = $event['source']['userId'];
-            reply("user ID : ".$userID);
-            reply("what i get : ".json_encode($event);
-$event);
+//            reply("user ID : ".$userID);
+            reply("what i get : ".print_r($event);
 
             reply(residentialReply($text));
 
