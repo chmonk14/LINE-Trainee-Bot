@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9600de24-b3ad-48e6-b536-57cda33e51ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/database.php" afterPath="$PROJECT_DIR$/Database/database.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +17,8 @@
       <file leaf-file-name="bot.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="236">
+              <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding>
                 <element signature="e#2014#3482#0#PHP" expanded="false" />
               </folding>
@@ -80,10 +81,13 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-292">
-              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="713">
+              <caret line="124" column="14" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
               <folding>
-                <marker date="1507761200000" expanded="true" signature="1395:1416" ph="SELECT * FRO... Pending" />
+                <marker date="1507762637000" expanded="true" signature="1285:1326" ph="SELECT * FRO... Pending" />
+                <marker date="1507762637000" expanded="true" signature="1285:1336" ph="SELECT * FRO... Pending" />
+                <marker date="1507762637000" expanded="true" signature="1425:1477" ph="INSERT INTO Pending... " />
+                <marker date="1507762637000" expanded="true" signature="2254:2275" ph="SELECT * FRO... Pending" />
               </folding>
             </state>
           </provider>
@@ -231,12 +235,12 @@
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
       <workItem from="1507712005128" duration="4089000" />
-      <workItem from="1507737734824" duration="10771000" />
+      <workItem from="1507737734824" duration="11985000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16841000" />
+    <option name="totallyTimeSpent" value="18055000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -303,7 +307,10 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507761200000" expanded="true" signature="1395:1416" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1326" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1336" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1425:1477" ph="INSERT INTO Pending... " />
+            <marker date="1507762637000" expanded="true" signature="2254:2275" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -323,7 +330,10 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507761200000" expanded="true" signature="1395:1416" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1326" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1336" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1425:1477" ph="INSERT INTO Pending... " />
+            <marker date="1507762637000" expanded="true" signature="2254:2275" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -463,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="236">
+          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding>
             <element signature="e#2014#3482#0#PHP" expanded="false" />
           </folding>
@@ -473,10 +483,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-292">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="713">
+          <caret line="124" column="14" lean-forward="false" selection-start-line="124" selection-start-column="14" selection-end-line="124" selection-end-column="14" />
           <folding>
-            <marker date="1507761200000" expanded="true" signature="1395:1416" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1326" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1285:1336" ph="SELECT * FRO... Pending" />
+            <marker date="1507762637000" expanded="true" signature="1425:1477" ph="INSERT INTO Pending... " />
+            <marker date="1507762637000" expanded="true" signature="2254:2275" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>

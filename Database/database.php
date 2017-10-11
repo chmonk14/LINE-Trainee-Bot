@@ -39,28 +39,56 @@ function connectToDatabase(){
 }
 
 
-function addPendingUser(){
+function addPendingUser($userToken){
 
-    $completed = "";
+    $response = array(
+        'status' => 'FAILED',
+        'code' => '400',
+        'message' => '',
+        'data' => array()
+    );
+
+    global $conn;
+    if (!connectToDatabase()){
+
+        $response['message'] = "Can't connect to database";
+
+        return json_encode($response);
+    }
+
+    $sql_does_exist = "SELECT * FROM Pending WHERE LINE_token = $userToken";
+
+    if (mysqli_query($conn,$sql_does_exist)->num_rows == 0){
+
+        $sql_insert = "INSERT INTO Pending (LINE_token) VALUES ($userToken)";
+
+        if ($conn->query($sql_insert) === TRUE) {
+            $response['message'] = "We have registered you to server, please wait for confirmation";
+        } else {
+            $response['message'] = "You already registered please wait for confirmation";
+        }
 
 
-    return $completed;
+    }else{
+        $response['message'] = "You already registered please wait for confirmation";
+        return json_encode($response);
+
+    }
+
+    return json_encode($response);
 }
 
 function retrievePendingUser(){
 
     $response = array(
-        'status' => '',
-        'code' => '',
+        'status' => 'FAILED',
+        'code' => '400',
         'message' => '',
         'data' => array()
     );
 
     if (!connectToDatabase()){
-
-        $response['status'] = "FAILED";
         $response['message'] = "Can't connect to database";
-        $response['code'] = '400';
 
         return json_encode($response);
     }
@@ -71,10 +99,7 @@ function retrievePendingUser(){
     global $conn;
     $result = mysqli_query($conn,$sql);
     $row_count = mysqli_num_rows($result);
-//    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-
 //    print_r($row);
-
     $data = array();
 
     if($row_count > 0){
@@ -89,11 +114,7 @@ function retrievePendingUser(){
         $response['data'] = $data;
 
     }else{
-        $response['status'] = "FAILED";
         $response['message'] = 'Not found on database';
-        $response['code'] = '400';
-
-//        echo "Can't found in database";
     }
 
 
@@ -101,4 +122,4 @@ function retrievePendingUser(){
     echo json_encode($response);
 }
 
-retrievePendingUser();
+addPendingUser();
