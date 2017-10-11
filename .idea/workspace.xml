@@ -80,10 +80,10 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="76" column="4" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
               <folding>
-                <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+                <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
               </folding>
             </state>
           </provider>
@@ -231,12 +231,12 @@
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
       <workItem from="1507712005128" duration="4089000" />
-      <workItem from="1507737734824" duration="9460000" />
+      <workItem from="1507737734824" duration="9574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15530000" />
+    <option name="totallyTimeSpent" value="15644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -303,7 +303,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -323,7 +323,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -473,10 +473,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+        <state relative-caret-position="372">
+          <caret line="76" column="4" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
           <folding>
-            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>

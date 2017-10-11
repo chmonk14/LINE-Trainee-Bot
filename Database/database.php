@@ -73,6 +73,8 @@ function retrievePendingUser(){
     $row_count = mysqli_num_rows($result);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
+    print_r($row);
+    
     $data = array();
 
     if($row_count > 0){
