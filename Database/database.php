@@ -71,17 +71,27 @@ function retrievePendingUser(){
     global $conn;
     $result = mysqli_query($conn,$sql);
     $row_count = mysqli_num_rows($result);
-    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+//    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
-    print_r($row);
-    
+//    print_r($row);
+
     $data = array();
 
     if($row_count > 0){
 
-        foreach ($row as $key => $value){
-            echo "{$key} => {$value} ";
-//            array_push($data, )
+        $i = 0;
+        while($row = $result->fetch_assoc()) {
+
+            echo "row[".$i++."] : {$row}";
+
+            foreach ($row as $key => $value){
+                echo "{$key} => {$value} ";
+    //            array_push($data, )
+            }
+
+            echo "</br>";
+
+//        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
         }
 
 
@@ -95,8 +105,7 @@ function retrievePendingUser(){
         $response['message'] = 'Not found on database';
         $response['code'] = '400';
 
-
-        echo "Can't found in database";
+//        echo "Can't found in database";
     }
 
 

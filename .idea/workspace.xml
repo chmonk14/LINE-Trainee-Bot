@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9600de24-b3ad-48e6-b536-57cda33e51ab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/database.php" afterPath="$PROJECT_DIR$/Database/database.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,10 +81,10 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="76" column="4" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+            <state relative-caret-position="512">
+              <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
               <folding>
-                <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+                <marker date="1507760639000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
               </folding>
             </state>
           </provider>
@@ -231,12 +232,12 @@
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
       <workItem from="1507712005128" duration="4089000" />
-      <workItem from="1507737734824" duration="9574000" />
+      <workItem from="1507737734824" duration="10324000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15644000" />
+    <option name="totallyTimeSpent" value="16394000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -303,7 +304,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507760639000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -323,7 +324,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507760639000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -473,10 +474,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="76" column="4" lean-forward="false" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+        <state relative-caret-position="512">
+          <caret line="91" column="25" lean-forward="false" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
           <folding>
-            <marker date="1507758597000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
+            <marker date="1507760639000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
