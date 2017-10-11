@@ -52,13 +52,14 @@ function addPendingUser($userToken){
         echo json_encode($response);
     }
 
-    $sql_does_exist = "SELECT * FROM Pending WHERE LINE_token = $userToken";
+    $sql_does_exist = "SELECT * FROM Pending WHERE LINE_token = '$userToken'";
 
     if (mysqli_query($conn,$sql_does_exist)->num_rows == 0){
 
         $sql_insert = "INSERT INTO Pending (LINE_token) VALUES ('$userToken')";
 
         if (mysqli_query($conn, $sql_insert)) {
+            $response['status'] = "SUCCESS";
             $response['code'] = '200';
             $response['message'] = "We have registered you to server, please wait for confirmation";
         } else {
