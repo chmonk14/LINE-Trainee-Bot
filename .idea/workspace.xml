@@ -16,8 +16,8 @@
       <file leaf-file-name="bot.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+            <state relative-caret-position="150">
+              <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -157,12 +157,12 @@
       <option name="presentableId" value="Default" />
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
-      <workItem from="1507712005128" duration="2623000" />
+      <workItem from="1507712005128" duration="2744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4604000" />
+    <option name="totallyTimeSpent" value="4725000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -279,8 +279,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bot.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="46" column="28" lean-forward="true" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        <state relative-caret-position="150">
+          <caret line="35" column="8" lean-forward="false" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
           <folding />
         </state>
       </provider>

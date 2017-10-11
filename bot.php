@@ -33,8 +33,20 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
     // Loop through each event
     foreach ($events['events'] as $event) {
+        
+        // Get replyToken
+        $replyToken = $event['replyToken'];
 
-        //reply init
+        // Build message to reply back
+        $messages = [
+            'type' => 'text',
+            'text' => 'from Trainee Bot. Ver. 0.0.3 : '.$text
+        ];
+
+        // Make a POST Request to Messaging API to reply to sender
+        $url = 'https://api.line.me/v2/bot/message/reply';
+
+        //reply
         $data = [
             'replyToken' => $replyToken,
             'messages' => [$messages],
@@ -46,19 +58,6 @@ if (!is_null($events['events'])) {
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
             // Get text sent
             $text = $event['message']['text'];
-            // Get replyToken
-            $replyToken = $event['replyToken'];
-
-            // Build message to reply back
-            $messages = [
-                'type' => 'text',
-                'text' => 'from Trainee Bot. Ver. 0.0.3 : '.$text
-            ];
-
-            // Make a POST Request to Messaging API to reply to sender
-            $url = 'https://api.line.me/v2/bot/message/reply';
-
-
 
 
 
