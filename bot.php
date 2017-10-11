@@ -40,7 +40,7 @@ if (!is_null($events['events'])) {
         // Build message to reply back
         $messages = [
             'type' => 'text',
-            'text' => 'from Trainee Bot. Ver. 0.0.3 : '.$text
+            'text' => 'from Trainee Bot. Ver. 0.0.3 : '
         ];
 
         // Make a POST Request to Messaging API to reply to sender
@@ -59,7 +59,9 @@ if (!is_null($events['events'])) {
             // Get text sent
             $text = $event['message']['text'];
 
-            $userID = $event['source']['userId'];
+            $messages['text'] .= $text;
+
+//            $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
 
             reply(residentialReply($text));
