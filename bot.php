@@ -50,7 +50,6 @@ if (!is_null($events['events'])) {
             $url = 'https://api.line.me/v2/bot/message/reply';
 
 
-
             //reply
             $data = [
                 'replyToken' => $replyToken,
@@ -58,7 +57,7 @@ if (!is_null($events['events'])) {
             ];
 
 
-            array_push($data['messages'], residentialReply($text));
+            reply(residentialReply($text));
 
             //reply to sth "light"
             if(stripos($text, 'light') !== false){
