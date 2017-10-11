@@ -83,10 +83,10 @@ function retrievePendingUser(){
             $innerArray = array();
             foreach ($row as $key => $value){
                 echo "{$key} => {$value} ";
-                array_push($innerArray, array($key => $value));
+//                array_push($innerArray, $key => $value);
             }
 
-            array_push($data, $innerArray);
+            array_push($data, $row);
         }
 
         $response['status'] = "SUCCESS";
