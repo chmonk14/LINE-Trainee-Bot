@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9600de24-b3ad-48e6-b536-57cda33e51ab" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Database/database.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/database.php" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dbTest.php" afterPath="$PROJECT_DIR$/Database/dbTest.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Database/database.php" afterPath="$PROJECT_DIR$/Database/database.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -83,10 +80,10 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Database/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+            <state relative-caret-position="263">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding>
-                <marker date="1507757894000" expanded="true" signature="1030:1051" ph="SELECT * FRO... Pending" />
+                <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
               </folding>
             </state>
           </provider>
@@ -234,12 +231,12 @@
       <updated>1507540961450</updated>
       <workItem from="1507540962859" duration="1981000" />
       <workItem from="1507712005128" duration="4089000" />
-      <workItem from="1507737734824" duration="8903000" />
+      <workItem from="1507737734824" duration="9460000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14973000" />
+    <option name="totallyTimeSpent" value="15530000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -306,7 +303,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507757894000" expanded="true" signature="1030:1051" ph="SELECT * FRO... Pending" />
+            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -326,7 +323,7 @@
         <state relative-caret-position="150">
           <caret line="15" column="39" lean-forward="false" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="39" />
           <folding>
-            <marker date="1507757894000" expanded="true" signature="1030:1051" ph="SELECT * FRO... Pending" />
+            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>
@@ -476,10 +473,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Database/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="66" column="9" lean-forward="true" selection-start-line="66" selection-start-column="9" selection-end-line="66" selection-end-column="9" />
+        <state relative-caret-position="263">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding>
-            <marker date="1507757894000" expanded="true" signature="1030:1051" ph="SELECT * FRO... Pending" />
+            <marker date="1507758466000" expanded="true" signature="1391:1412" ph="SELECT * FRO... Pending" />
           </folding>
         </state>
       </provider>

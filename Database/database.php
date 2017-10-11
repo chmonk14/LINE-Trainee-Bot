@@ -31,12 +31,13 @@ function connectToDatabase(){
 // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
+        return false;
     }
     echo "Connection was successfully established!";
 
+    return true;
 }
 
-connectToDatabase();
 
 function addPendingUser(){
 
@@ -48,14 +49,29 @@ function addPendingUser(){
 
 function retrievePendingUser(){
 
+    $response = array(
+        'status' => '',
+        'code' => '',
+        'message' => '',
+        'data' => array()
+    );
+
+    if (!connectToDatabase()){
+
+        $response['status'] = "FAILED";
+        $response['message'] = "Can't connect to database";
+        $response['code'] = '400';
+
+        return json_encode($response);
+    }
+
+
     $sql = "SELECT * FROM Pending";
 
     global $conn;
     $result = mysqli_query($conn,$sql);
     $row_count = mysqli_num_rows($result);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-
-    $replyStr = "Error fetching data from database";
 
     $data = array();
 
@@ -66,20 +82,24 @@ function retrievePendingUser(){
 //            array_push($data, )
         }
 
+
+        $response['status'] = "SUCCESS";
+        $response['message'] = 'Retrieve data successfully';
+        $response['code'] = '200';
+        $response['data'] = $data;
+
     }else{
-        $replyStr = "Can't found in database";
+        $response['status'] = "FAILED";
+        $response['message'] = 'Not found on database';
+        $response['code'] = '400';
+
+
+        echo "Can't found in database";
     }
 
-    $response = array(
-        'status' => '',
-        'code' => '',
-        'message' => '',
-        'data' => $data
-    );
 
-    json_encode($response);
 
-    echo $replyStr;
+    echo json_encode($response);
 }
 
 retrievePendingUser();
