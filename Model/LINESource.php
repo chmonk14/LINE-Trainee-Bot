@@ -53,7 +53,7 @@ class LINEUser{
         curl_close($ch);
 
         $JSONUser = json_decode($response, true);
-        echo '</br>decode'.$JSONUser['pictureUrl'];
+        echo '</br>decode'.$JSONUser['data']['pictureUrl'];
 
 
     }
