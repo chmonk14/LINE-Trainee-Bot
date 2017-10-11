@@ -59,7 +59,7 @@ if (!is_null($events['events'])) {
 
             $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
-            reply("what i get : ".print_r($event);
+            reply("what i get : ".var_export($event,true));
 
             reply(residentialReply($text));
 
