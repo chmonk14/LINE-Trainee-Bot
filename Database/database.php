@@ -30,10 +30,10 @@ function connectToDatabase(){
 
 // Check connection
     if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+//        die("Connection failed: " . $conn->connect_error);
         return false;
     }
-    echo "Connection was successfully established!";
+//    echo "Connection was successfully established!";
 
     return true;
 }
@@ -80,12 +80,6 @@ function retrievePendingUser(){
     if($row_count > 0){
 
         while($row = $result->fetch_assoc()) {
-            $innerArray = array();
-            foreach ($row as $key => $value){
-                echo "{$key} => {$value} ";
-//                array_push($innerArray, $key => $value);
-            }
-
             array_push($data, $row);
         }
 
