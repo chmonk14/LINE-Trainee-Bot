@@ -63,11 +63,11 @@ function addPendingUser($userToken){
         $sql_insert = "INSERT INTO Pending (LINE_token) VALUES ($userToken)";
 
         if ($conn->query($sql_insert) === TRUE) {
+            $response['code'] = '200';
             $response['message'] = "We have registered you to server, please wait for confirmation";
         } else {
-            $response['message'] = "You already registered please wait for confirmation";
+            $response['message'] = "Fail insert token to database";
         }
-
 
     }else{
         $response['message'] = "You already registered please wait for confirmation";
