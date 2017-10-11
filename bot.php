@@ -53,7 +53,7 @@ if (!is_null($events['events'])) {
         ];
 
 
-        reply("what i get : ".var_export($event,true));
+//        reply("what i get : ".var_export($event,true));
 
         // Reply only when message sent is in 'text' format
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {

@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 }
 echo "Connection was successfully established!";
 
-$checkQ = "SELECT state FROM Accessory WHERE accID=1";
+$checkQ = "SELECT * FROM Customer";
 
 $result = mysqli_query($conn,$checkQ);
 $row_count = mysqli_num_rows($result);
