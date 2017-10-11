@@ -56,7 +56,7 @@ function addPendingUser($userToken){
 
     if (mysqli_query($conn,$sql_does_exist)->num_rows == 0){
 
-        $sql_insert = "INSERT INTO Pending (LINE_token) VALUE ($userToken)";
+        $sql_insert = "INSERT INTO Pending ('LINE_token') VALUES ($userToken)";
 
         if (mysqli_query($conn, $sql_insert)) {
             $response['code'] = '200';
