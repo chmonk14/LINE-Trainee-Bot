@@ -43,7 +43,7 @@ if (!is_null($events['events'])) {
             // Build message to reply back
             $messages = [
                 'type' => 'text',
-                'text' => 'from Trainee Bot. Ver. 0.0.1 : '.$text
+                'text' => 'from Trainee Bot. Ver. 0.0.2 : '.$text
             ];
 
             // Make a POST Request to Messaging API to reply to sender
@@ -57,8 +57,8 @@ if (!is_null($events['events'])) {
                 'messages' => [$messages],
             ];
 
-            array_push($data['messages'], residentialReply($text));
 
+            array_push($data['messages'], residentialReply($text));
 
             //reply to sth "light"
             if(stripos($text, 'light') !== false){
