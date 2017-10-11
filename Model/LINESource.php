@@ -49,11 +49,11 @@ class LINEUser{
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 
-        $result = curl_exec($ch);
+        $response = curl_exec($ch);
         curl_close($ch);
 
-        $JSONUser = var_dump(json_decode($result, true));
-        echo 'decode'.$JSONUser['pictureUrl'].'</br>';
+        $JSONUser = json_decode($response, true);
+        echo '</br>decode'.$JSONUser['pictureUrl'];
 
 
     }
