@@ -55,13 +55,12 @@ class LINEUser{
         curl_close($ch);
 
         echo '</br></br>';
-        echo $response;
-
-        print_r($response);
-        echo $response['data']['pictureUrl'];
+        echo '</br> response :'.$response;
+        echo '</br> response[data]s :'.$response['data'];
 
         $JSONUser = var_dump(json_decode($response, true));
-        echo '</br>decode'.$JSONUser['pictureUrl'];
+        echo '</br>decode'.$JSONUser;
+        print_r($JSONUser);
 
 
     }
