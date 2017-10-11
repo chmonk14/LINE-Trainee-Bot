@@ -10,7 +10,7 @@ function residentialReply($inputMessage){
 
     $replyMessage = "";
 
-    if (stripos($inputMessage, 'elec') ){
+    if (stripos($inputMessage, 'elec') !== false){
         $replyMessage .= 'electric';
     }else{
         $replyMessage .= 'not electric';

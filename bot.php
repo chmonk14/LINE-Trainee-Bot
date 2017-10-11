@@ -52,6 +52,7 @@ if (!is_null($events['events'])) {
             'messages' => [$messages],
         ];
 
+
         reply("what i get : ".var_export($event,true));
 
         // Reply only when message sent is in 'text' format
@@ -64,7 +65,17 @@ if (!is_null($events['events'])) {
 //            $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
 
-            reply(residentialReply($text));
+            if ($text == 'REGISTER ME'){
+                 //add user to pending list
+
+
+                reply("We are registering you to server, please wait for confirmation");
+
+            }else{
+                reply(residentialReply($text));
+
+            }
+
 
             /*
             //reply to sth "light"
