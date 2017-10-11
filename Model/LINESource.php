@@ -12,8 +12,12 @@ class LINESource
     var $user, $group;
 
     public function __construct($JSONSource){
-        switch ($JSONSource['type']) {
-            case 'user' : $this->user = new LINEUser($JSONSource);
+
+        if($JSONSource['type'] == 'user'){
+            $this->user = new LINEUser($JSONSource);
+        }
+        if($JSONSource['type'] == 'group'){
+            $this->group = new LINEGroup($JSONSource);
         }
     }
 
@@ -21,7 +25,7 @@ class LINESource
 
 class LINEUser{
 
-    var $userID, $profileURL, $displayName;
+    var $userID, $profileURL, $displayName, $statusMessage;
 
     public function __construct($JSONSource)
     {
@@ -46,7 +50,12 @@ class LINEUser{
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 
         $result = curl_exec($ch);
-        echo $result;
+
+        echo 'var_export'.var_export($result,true);
+        $JSONUser = json_decode($result);
+        echo 'decode'.$JSONUser;
+        print_r($JSONUser);
+
         curl_close($ch);
     }
 }
