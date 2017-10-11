@@ -56,7 +56,9 @@ class LINEUser{
 
         echo '</br></br>';
         echo $response;
-        echo $response['pictureUrl'];
+
+        print_r($response);
+        echo $response['data']['pictureUrl'];
 
         $JSONUser = var_dump(json_decode($response, true));
         echo '</br>decode'.$JSONUser['pictureUrl'];
