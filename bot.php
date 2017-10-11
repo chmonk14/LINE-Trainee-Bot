@@ -2,6 +2,7 @@
 echo "I am a bot";
 
 include 'bot-function.php';
+include 'Reply/Residential.php';
 
 $data; //reply data
 
@@ -48,11 +49,17 @@ if (!is_null($events['events'])) {
             // Make a POST Request to Messaging API to reply to sender
             $url = 'https://api.line.me/v2/bot/message/reply';
 
+
+
             //reply
             $data = [
                 'replyToken' => $replyToken,
                 'messages' => [$messages],
             ];
+
+            array_push($data['messages'], residentialReply($text));
+
+
             //reply to sth "light"
             if(stripos($text, 'light') !== false){
                 reply(isLightOn());
