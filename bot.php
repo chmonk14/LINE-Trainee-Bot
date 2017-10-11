@@ -33,6 +33,9 @@ $events = json_decode($content, true);
 if (!is_null($events['events'])) {
     // Loop through each event
     foreach ($events['events'] as $event) {
+
+        reply("what i get : ".var_export($event,true));
+
         // Reply only when message sent is in 'text' format
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
             // Get text sent
@@ -59,7 +62,6 @@ if (!is_null($events['events'])) {
 
             $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
-            reply("what i get : ".var_export($event,true));
 
             reply(residentialReply($text));
 
