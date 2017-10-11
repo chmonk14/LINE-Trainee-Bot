@@ -79,21 +79,15 @@ function retrievePendingUser(){
 
     if($row_count > 0){
 
-        $i = 0;
         while($row = $result->fetch_assoc()) {
-
-            echo "row[".$i++."] : {$row}";
-
+            $innerArray = array();
             foreach ($row as $key => $value){
                 echo "{$key} => {$value} ";
-    //            array_push($data, )
+                array_push($innerArray, array($key => $value));
             }
 
-            echo "</br>";
-
-//        echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            array_push($data, $innerArray);
         }
-
 
         $response['status'] = "SUCCESS";
         $response['message'] = 'Retrieve data successfully';
