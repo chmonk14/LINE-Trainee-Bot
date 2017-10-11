@@ -10,4 +10,6 @@ include("Model/LINESource.php");
 
 $user = new LINEUser();
 $user->userID = 'U598fd340290868fa5b013ba502212c79';
+
+echo "call User profile";
 $user->getProfile();

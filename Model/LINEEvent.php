@@ -40,6 +40,6 @@ class LINEEvent
 
 
 
-        $this->source = $JSONEvent['source']
+        $this->source = $JSONEvent['source'];
     }
 }
