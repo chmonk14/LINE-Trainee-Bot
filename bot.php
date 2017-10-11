@@ -34,6 +34,12 @@ if (!is_null($events['events'])) {
     // Loop through each event
     foreach ($events['events'] as $event) {
 
+        //reply init
+        $data = [
+            'replyToken' => $replyToken,
+            'messages' => [$messages],
+        ];
+
         reply("what i get : ".var_export($event,true));
 
         // Reply only when message sent is in 'text' format
@@ -53,11 +59,7 @@ if (!is_null($events['events'])) {
             $url = 'https://api.line.me/v2/bot/message/reply';
 
 
-            //reply
-            $data = [
-                'replyToken' => $replyToken,
-                'messages' => [$messages],
-            ];
+
 
 
             $userID = $event['source']['userId'];
