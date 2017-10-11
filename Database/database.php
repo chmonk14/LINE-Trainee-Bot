@@ -46,9 +46,7 @@ function addPendingUser($userToken){
 
     global $conn;
     if (!connectToDatabase()){
-
         $response['message'] = "Can't connect to database";
-
         echo json_encode($response);
     }
 
@@ -68,8 +66,6 @@ function addPendingUser($userToken){
 
     }else{
         $response['message'] = "You already registered please wait for confirmation";
-        echo json_encode($response);
-
     }
 
     echo json_encode($response);
@@ -87,7 +83,7 @@ function retrievePendingUser(){
     if (!connectToDatabase()){
         $response['message'] = "Can't connect to database";
 
-        return json_encode($response);
+        echo json_encode($response);
     }
 
 
@@ -114,9 +110,7 @@ function retrievePendingUser(){
         $response['message'] = 'Not found on database';
     }
 
-
-
     echo json_encode($response);
 }
 
-addPendingUser('U598fd340290868fa5b013ba502212c79');
+//addPendingUser('U598fd340290868fa5b013ba502212c79');

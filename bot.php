@@ -1,8 +1,26 @@
 <?php
 echo "I am a bot";
 
-include 'bot-function.php';
 include 'Reply/Residential.php';
+include 'Database/database.php';
+include "Model/*";
+
+/*Directories that contain classes*/
+$classesDir = array (
+    ROOT_DIR.'Model/',
+//    ROOT_DIR.'firephp/',
+//    ROOT_DIR.'includes/'
+);
+function __autoload($class_name) {
+    global $classesDir;
+    foreach ($classesDir as $directory) {
+        if (file_exists($directory . $class_name . '.php')) {
+            require_once ($directory . $class_name . '.php');
+            return;
+        }
+    }
+}
+
 
 $data; //reply data
 
@@ -34,8 +52,10 @@ if (!is_null($events['events'])) {
     // Loop through each event
     foreach ($events['events'] as $event) {
 
+        $LINEEvent = new LINEEvent();
+
         // Get replyToken
-        $replyToken = $event['replyToken'];
+        $replyToken = $LINEEvent->replyToken;
 
         // Build message to reply back
         $messages = [
@@ -58,7 +78,7 @@ if (!is_null($events['events'])) {
         // Reply only when message sent is in 'text' format
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
             // Get text sent
-            $text = $event['message']['text'];
+            $text = $LINEEvent->message->text;
 
             $messages['text'] .= $text;
 
@@ -67,13 +87,11 @@ if (!is_null($events['events'])) {
 
             if ($text == 'REGISTER ME'){
                  //add user to pending list
-
-
-                reply("We are registering you to server, please wait for confirmation");
+                $addPendingResult = addPendingUser($LINEEvent->source->user->userID);
+                reply($addPendingResult["message"]);
 
             }else{
                 reply(residentialReply($text));
-
             }
 
 

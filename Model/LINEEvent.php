@@ -38,8 +38,6 @@ class LINEEvent
             default:    break;
         }
 
-
-
-        $this->source = $JSONEvent['source'];
+        $this->source = new LINESource($JSONEvent['source']);
     }
 }

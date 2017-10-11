@@ -6,7 +6,19 @@
  * Time: 11:11 PM
  */
 
-class LINEMessage
-{
+class LINEMessage{
 
+    var $text, $messageID;
+
+    public function __construct($JSONMessage){
+        switch ($JSONMessage['type']){
+            case 'text': $this->text = $JSONMessage['text']; break;
+            case  'sticker': break;
+            default: $this->getContent();
+        }
+    }
+
+    function getContent(){
+
+    }
 }
