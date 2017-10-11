@@ -53,7 +53,7 @@ function addPendingUser($userToken){
 
         $response['message'] = "Can't connect to database";
 
-        return json_encode($response);
+        echo json_encode($response);
     }
 
     $sql_does_exist = "SELECT * FROM Pending WHERE LINE_token = $userToken";
@@ -71,11 +71,11 @@ function addPendingUser($userToken){
 
     }else{
         $response['message'] = "You already registered please wait for confirmation";
-        return json_encode($response);
+        echo json_encode($response);
 
     }
 
-    return json_encode($response);
+    echo json_encode($response);
 }
 
 function retrievePendingUser(){
