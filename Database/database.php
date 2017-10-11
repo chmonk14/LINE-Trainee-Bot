@@ -29,13 +29,9 @@ function connectToDatabase(){
     $conn = new mysqli($hostname, $username, $password, $database);
 
 // Check connection
-    if ($conn->connect_error) {
-//        die("Connection failed: " . $conn->connect_error);
-        return false;
-    }
-//    echo "Connection was successfully established!";
+    if ($conn->connect_error) return false;
+    else return true;
 
-    return true;
 }
 
 
@@ -60,13 +56,13 @@ function addPendingUser($userToken){
 
     if (mysqli_query($conn,$sql_does_exist)->num_rows == 0){
 
-        $sql_insert = "INSERT INTO Pending (LINE_token) VALUES ($userToken)";
+        $sql_insert = "INSERT INTO Pending (LINE_token) VALUE ($userToken)";
 
-        if ($conn->query($sql_insert) === TRUE) {
+        if (mysqli_query($conn, $sql_insert)) {
             $response['code'] = '200';
             $response['message'] = "We have registered you to server, please wait for confirmation";
         } else {
-            $response['message'] = "Fail insert token to database";
+            $response['message'] = "Fail insert token to database".mysqli_error($conn);
         }
 
     }else{
