@@ -3,7 +3,7 @@ echo "I am a bot";
 
 include 'Reply/Residential.php';
 include 'Database/database.php';
-include "Model/*";
+//include "Model/*";
 
 /*Directories that contain classes*/
 $classesDir = array (
