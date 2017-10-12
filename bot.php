@@ -80,12 +80,12 @@ if (!is_null($events['events'])) {
             $text = $event['message']['text'];
 
 
-//            $userID = $event['source']['userId'];
+            $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
 
             if ($text == 'REGISTER ME'){
                  //add user to pending list
-                $addPendingResult = addPendingUser($LINEEvent->source->user->userID);
+                $addPendingResult = addPendingUser($userID);
                 reply($addPendingResult["message"]);
 
             }else{
