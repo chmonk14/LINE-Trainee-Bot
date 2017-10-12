@@ -48,6 +48,7 @@ function addPendingUser($userToken){
     if (!connectToDatabase()){
         $response['message'] = "Can't connect to database";
         echo json_encode($response);
+        return json_encode($response);
     }
 
     $sql_does_exist = "SELECT * FROM Pending WHERE LINE_token = '$userToken'";
@@ -69,6 +70,7 @@ function addPendingUser($userToken){
     }
 
     echo json_encode($response);
+    return json_encode($response);
 }
 
 function retrievePendingUser(){
@@ -84,6 +86,7 @@ function retrievePendingUser(){
         $response['message'] = "Can't connect to database";
 
         echo json_encode($response);
+        return json_encode($response);
     }
 
 
@@ -111,6 +114,7 @@ function retrievePendingUser(){
     }
 
     echo json_encode($response);
+    return json_encode($response);
 }
 
 //addPendingUser('U598fd340290868fa5b013ba502212c79');

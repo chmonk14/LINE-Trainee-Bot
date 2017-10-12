@@ -85,8 +85,8 @@ if (!is_null($events['events'])) {
 
             if ($text == 'REGISTER ME'){
                  //add user to pending list
-                $addPendingResult = addPendingUser($userID);
-                reply($addPendingResult["message"]);
+//                $addPendingResult = addPendingUser($userID);
+                reply(addPendingUser($userID));
 
             }else{
                 reply(residentialReply($text));
