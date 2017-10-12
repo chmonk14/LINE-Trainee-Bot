@@ -6,20 +6,20 @@ include 'Database/database.php';
 //include "Model/*";
 
 /*Directories that contain classes*/
-$classesDir = array (
-    ROOT_DIR.'Model/',
-//    ROOT_DIR.'firephp/',
-//    ROOT_DIR.'includes/'
-);
-function __autoload($class_name) {
-    global $classesDir;
-    foreach ($classesDir as $directory) {
-        if (file_exists($directory . $class_name . '.php')) {
-            require_once ($directory . $class_name . '.php');
-            return;
-        }
-    }
-}
+//$classesDir = array (
+//    ROOT_DIR.'Model/',
+////    ROOT_DIR.'firephp/',
+////    ROOT_DIR.'includes/'
+//);
+//function __autoload($class_name) {
+//    global $classesDir;
+//    foreach ($classesDir as $directory) {
+//        if (file_exists($directory . $class_name . '.php')) {
+//            require_once ($directory . $class_name . '.php');
+//            return;
+//        }
+//    }
+//}
 
 
 $data; //reply data
@@ -52,7 +52,7 @@ if (!is_null($events['events'])) {
     // Loop through each event
     foreach ($events['events'] as $event) {
 
-        $LINEEvent = new LINEEvent();
+//        $LINEEvent = new LINEEvent();
 
         // Get replyToken
         $replyToken = $event['replyToken'];
