@@ -63,8 +63,7 @@ if (!is_null($events['events'])) {
             'text' => 'from Trainee Bot. Ver. 0.0.3 : '
         ];
 
-        // Make a POST Request to Messaging API to reply to sender
-        $url = 'https://api.line.me/v2/bot/message/reply';
+
 
         //reply
         $data = [
@@ -78,15 +77,15 @@ if (!is_null($events['events'])) {
         if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
             // Get text sent
             $text = $event['message']['text'];
-
-
-            $userID = $event['source']['userId'];
 //            reply("user ID : ".$userID);
 
             if ($text == 'REGISTER ME'){
                  //add user to pending list
-//                $addPendingResult = addPendingUser($userID);
-                reply(addPendingUser($userID));
+                $userID = $event['source']['userId'];
+
+                $addPendingResult = addPendingUser($userID);
+                reply($addPendingResult["message"]);
+//                reply(addPendingUser($userID));
 
             }else{
                 reply(residentialReply($text));
@@ -137,6 +136,9 @@ if (!is_null($events['events'])) {
             }*/
 
         }
+
+        // Make a POST Request to Messaging API to reply to sender
+        $url = 'https://api.line.me/v2/bot/message/reply';
 
         $post = json_encode($data);
         $headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);

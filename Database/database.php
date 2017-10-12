@@ -70,7 +70,7 @@ function addPendingUser($userToken){
     }
 
     echo json_encode($response);
-    return json_encode($response);
+    return $response;
 }
 
 function retrievePendingUser(){
@@ -114,7 +114,7 @@ function retrievePendingUser(){
     }
 
     echo json_encode($response);
-    return json_encode($response);
+    return $response;
 }
 
 //addPendingUser('U598fd340290868fa5b013ba502212c79');
